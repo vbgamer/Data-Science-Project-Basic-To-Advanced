@@ -1,0 +1,28 @@
+The Colab Notebook titled **"Intro to Exploratory Data Analysis (EDA) in Python"** serves as a comprehensive guide for beginners to understand and implement EDA using Python. Authored by Ian Moore, the notebook emphasizes the importance of EDA in understanding datasets by summarizing their main characteristics, often employing visual methods.
+
+**Key Highlights of the Notebook:**
+
+1. **Introduction to EDA:**
+   - EDA is presented as a crucial step in data analysis, aiding in uncovering patterns, spotting anomalies, and testing hypotheses.
+
+2. **Dataset Utilized:**
+   - The notebook employs the "Titanic: Machine Learning from Disaster" dataset, a popular choice for demonstrating data analysis techniques.
+
+3. **Data Loading and Inspection:**
+   - Utilizing `pandas`, the dataset is loaded, and initial inspections are conducted using methods like `.head()`, `.info()`, and `.describe()` to understand the structure and summary statistics.
+
+4. **Data Cleaning:**
+   - Handling missing values is demonstrated, with strategies such as imputing or dropping missing data.
+   - Data type conversions and handling categorical variables are also covered.
+
+5. **Data Visualization:**
+   - The notebook showcases various visualization techniques using libraries like `matplotlib` and `seaborn`.
+   - Visualizations include histograms, bar plots, box plots, and heatmaps to explore distributions and relationships between variables.
+
+6. **Feature Engineering:**
+   - Creation of new features from existing ones is demonstrated to enhance the predictive power of models.
+
+7. **Correlation Analysis:**
+   - A correlation matrix is computed and visualized to identify relationships between numerical variables.
+
+This notebook is a valuable resource for those starting with EDA in Python, providing practical examples and clear explanations to build a strong foundation in data analysis. 
