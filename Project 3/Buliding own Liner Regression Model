@@ -1,0 +1,124 @@
+Detailed Report on Linear Regression
+
+1. Introduction to Regression
+
+Regression is a fundamental concept in machine learning and statistics used for predicting continuous outcomes. It establishes a relationship between independent variables (features) and a dependent variable (target) by fitting a mathematical model to the data.
+
+Types of Regression
+
+Linear Regression: Predicts a continuous target variable based on a linear relationship with independent variables.
+
+Multiple Linear Regression: Extends simple linear regression to include multiple independent variables.
+
+Polynomial Regression: Captures non-linear relationships by introducing polynomial terms.
+
+Logistic Regression: Used for classification problems, despite its name.
+
+2. Understanding Linear Regression
+
+Linear Regression models the relationship between a dependent variable (Y) and one or more independent variables (X) using the equation:
+
+
+
+Where:
+
+Y = Predicted value
+
+m = Slope (coefficient)
+
+X = Independent variable
+
+c = Intercept
+
+For multiple independent variables, the equation extends to:
+
+
+
+where  are the regression coefficients.
+
+3. Implementing Linear Regression
+
+3.1 Ordinary Least Squares (OLS) Approach
+
+OLS is a mathematical method to find the best-fit line by minimizing the sum of squared residuals.
+
+Steps for OLS Method:
+
+Calculate mean of X and Y.
+
+Compute slope  using:
+
+
+Compute intercept :
+
+
+Predict values using .
+
+3.2 Gradient Descent Approach
+
+Gradient Descent is an iterative optimization technique used for large datasets.
+
+Steps for Gradient Descent:
+
+Initialize  and  to 0.
+
+Compute predictions: .
+
+Calculate loss function (Mean Squared Error - MSE).
+
+Compute gradients:
+
+
+
+Update  and :
+
+
+
+Repeat for a given number of epochs.
+
+4. Application: Insurance Charges Dataset
+
+4.1 Dataset Overview
+
+The Insurance Charges Dataset consists of:
+
+Numerical Features: age, bmi, children
+
+Categorical Features: sex, smoker, region
+
+Target Variable: charges (insurance cost)
+
+4.2 Data Preprocessing
+
+Convert categorical variables using Label Encoding.
+
+Split dataset into training (80%) and testing (20%).
+
+Scale numerical features for better model performance.
+
+4.3 Training the Model
+
+We use Scikit-learn's LinearRegression module to fit the model on the preprocessed data. The model learns the relationship between features and insurance charges.
+
+4.4 Model Evaluation
+
+Mean Squared Error (MSE): Measures average squared error between actual and predicted values.
+
+R² Score: Indicates goodness of fit (1 = perfect, 0 = no relation).
+
+5. Results & Visualization
+
+Model Coefficients: Shows the impact of each feature on insurance cost.
+
+Scatter Plot: Compares actual vs predicted charges.
+
+Residual Analysis: Examines prediction errors.
+
+The results indicate that features like smoking status and BMI significantly influence insurance charges.
+
+6. Conclusion
+
+✔ Linear Regression effectively models the relationship between insurance charges and personal attributes.
+✔ The OLS method provides a direct analytical solution, while Gradient Descent is useful for large datasets.
+✔ The trained model shows a good fit with an acceptable MSE and R² score.
+✔ Further improvements could include Polynomial Regression for non-linear relationships and Feature Engineering to improve model performance.
