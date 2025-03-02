@@ -1,1 +1,2 @@
 **Titanic Survival Prediction 
+The train.csv is training file , test.csv is testing file gender_submission is submission file where submission.csv is final file containing predictions
